@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  
+
+  
+  <title>写数学 Blog | Bobbie&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="上一篇文章讲了如何用 Octopress 在 GitHub 上搭建个人主页，今天这篇写给可爱的科研狗们，介绍怎么样让网页兼容 LaTeX！首先看看效果：  LaTeX 行间模式（displayed math）  latex123456$$\begin&amp;#123;align&amp;#125;\mbox&amp;#123;欧拉公式：&amp;#125; &amp;amp; e^&amp;#123;i\pi&amp;#125; + 1 = 0\\\">
+<meta name="keywords" content="Technology,LaTeX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写数学 Blog">
+<meta property="og:url" content="http://bobbielf2.github.io/2016/08/06/shu-xue-blog/index.html">
+<meta property="og:site_name" content="Bobbie&#39;s Blog">
+<meta property="og:description" content="上一篇文章讲了如何用 Octopress 在 GitHub 上搭建个人主页，今天这篇写给可爱的科研狗们，介绍怎么样让网页兼容 LaTeX！首先看看效果：  LaTeX 行间模式（displayed math）  latex123456$$\begin&amp;#123;align&amp;#125;\mbox&amp;#123;欧拉公式：&amp;#125; &amp;amp; e^&amp;#123;i\pi&amp;#125; + 1 = 0\\\">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-15T18:10:07.632Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="写数学 Blog">
+<meta name="twitter:description" content="上一篇文章讲了如何用 Octopress 在 GitHub 上搭建个人主页，今天这篇写给可爱的科研狗们，介绍怎么样让网页兼容 LaTeX！首先看看效果：  LaTeX 行间模式（displayed math）  latex123456$$\begin&amp;#123;align&amp;#125;\mbox&amp;#123;欧拉公式：&amp;#125; &amp;amp; e^&amp;#123;i\pi&amp;#125; + 1 = 0\\\">
+  
+    <link rel="alternate" href="/atom.xml" title="Bobbie&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Bobbie&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Boys be ambitious.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://bobbielf2.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-shu-xue-blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/06/shu-xue-blog/" class="article-date">
+  <time datetime="2016-08-06T23:11:58.000Z" itemprop="datePublished">2016-08-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      写数学 Blog
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="/2016/08/06/2016-08-06-yong-you-ni-de-ge-ren-bo-ke/">上一篇文章</a>讲了如何用 Octopress 在 GitHub 上搭建个人主页，今天这篇写给可爱的科研狗们，介绍怎么样让网页兼容 LaTeX！首先看看效果：</p>
+<ul>
+<li>LaTeX 行间模式（displayed math）</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>latex</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;align&#125;</span><br><span class="line">\mbox&#123;欧拉公式：&#125; &amp; e^&#123;i\pi&#125; + 1 = 0\\</span><br><span class="line">\mbox&#123;牛顿公式：&#125; &amp; x_&#123;i+1&#125; = \frac&#123;1&#125;&#123;2&#125;\left(x_i+\frac&#123;2&#125;&#123;x_i&#125;\right)</span><br><span class="line">\end&#123;align&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<script type="math/tex; mode=display">
+\begin{align}
+\mbox{欧拉公式：} & e^{i\pi} + 1 = 0\\
+\mbox{牛顿公式：} & x_{i+1} = \frac{1}{2}\left(x_i+\frac{2}{x_i}\right)
+\end{align}</script><a id="more"></a>
+<ul>
+<li>LaTeX 内嵌模式（inline math）</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>latex</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">爱因斯坦说过：$E = mc^2$</span><br></pre></td></tr></table></figure>
+<p>爱因斯坦说过：$E = mc^2$</p>
+<h4 id="让-Markdown-显示数学公式：kramdown-和-MathJax"><a href="#让-Markdown-显示数学公式：kramdown-和-MathJax" class="headerlink" title="让 Markdown 显示数学公式：kramdown 和 MathJax"></a>让 Markdown 显示数学公式：kramdown 和 MathJax</h4><h5 id="1-用-kramdown-代替-rdiscount"><a href="#1-用-kramdown-代替-rdiscount" class="headerlink" title="1, 用 kramdown 代替 rdiscount"></a>1, 用 kramdown 代替 rdiscount</h5><p>Octopress 中默认的 rdiscount 不支持把 Markdown 中的 LaTeX 公式呈现出来，所以要换成 <a href="http://kramdown.gettalong.org/" target="_blank" rel="noopener">kramdown</a>（这个 Markdown 转换器也是开源的，他家号称全球最快）。</p>
+<ul>
+<li>安装 kramdown（假设你已经有 rbenv，参考<a href="/blog/2016/08/06/yong-you-ni-de-ge-ren-bo-ke/index.html">上一篇文章</a> ），运行命令</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gem install kramdown</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改 Octopress 的<code>_config.yml</code>配置文件，把全部<code>rdiscount</code>都改成<code>kramdown</code></li>
+<li>修改 Octopress 的<code>Gemfile</code>，把里面的<code>gem &#39;rdiscount&#39;, &#39;~&gt; 2.0&#39;</code>改成<code>gem &#39;kramdown&#39;</code></li>
+</ul>
+<h4 id="2-配置-MathJax"><a href="#2-配置-MathJax" class="headerlink" title="2, 配置 MathJax"></a>2, 配置 MathJax</h4><p>在<code>/source/_includes/custom/head.html</code>文件里添加</p>
+<figure class="highlight html"><figcaption><span>head.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- mathjax config similar to math.stackexchange --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/x-mathjax-config"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">MathJax.Hub.Config(&#123;</span></span><br><span class="line"><span class="undefined">  jax: ["input/TeX", "output/HTML-CSS"],</span></span><br><span class="line"><span class="undefined">  tex2jax: &#123;</span></span><br><span class="line"><span class="undefined">    inlineMath: [ ['$', '$'] ],</span></span><br><span class="line"><span class="undefined">    displayMath: [ ['$$', '$$']],</span></span><br><span class="line"><span class="undefined">    processEscapes: true,</span></span><br><span class="line"><span class="undefined">    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']</span></span><br><span class="line"><span class="undefined">  &#125;,</span></span><br><span class="line"><span class="undefined">  messageStyle: "none",</span></span><br><span class="line"><span class="undefined">  "HTML-CSS": &#123; preferredFont: "TeX", availableFonts: ["STIX","TeX"] &#125;</span></span><br><span class="line"><span class="undefined">&#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>2017/5/19 update:</strong> MathJax 最近<a href="https://www.mathjax.org/cdn-shutting-down/" target="_blank" rel="noopener">更改了他们 CDN 的提供商</a>,所以上面这个 script 里最后一行的 cdn 地址很快就会不适用了，新的地址变成下面这个（注：我还把<code>http</code>改为<code>https</code>，保证在安全模式下看到数学公式）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-修复-MathJax-在页面中右键变白屏的-bug"><a href="#3-修复-MathJax-在页面中右键变白屏的-bug" class="headerlink" title="3, 修复 MathJax 在页面中右键变白屏的 bug"></a>3, 修复 MathJax 在页面中右键变白屏的 bug</h4><p>修改 Octopress 的<code>/sass/base/_theme.scss</code>文件，把代码中的</p>
+<figure class="highlight plain"><figcaption><span>_theme.scss</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//...</span><br><span class="line">&gt; div &#123;</span><br><span class="line">     background: $sidebar-bg $noise-bg;</span><br><span class="line">     border-bottom: 1px solid $page-border-bottom;</span><br><span class="line">     &gt; div &#123;</span><br><span class="line">//...</span><br></pre></td></tr></table></figure>
+<p>加入<code>#main</code>，变成</p>
+<figure class="highlight plain"><figcaption><span>sass</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//...</span><br><span class="line">&gt; div#main &#123;</span><br><span class="line">     background: $sidebar-bg $noise-bg;</span><br><span class="line">     border-bottom: 1px solid $page-border-bottom;</span><br><span class="line">     &gt; div &#123;</span><br><span class="line">//...</span><br></pre></td></tr></table></figure>
+<h4 id="4-修复-Pygments-的问题"><a href="#4-修复-Pygments-的问题" class="headerlink" title="4, 修复 Pygments 的问题"></a>4, 修复 Pygments 的问题</h4><p>这个是新版本出现的问题。使用 kramdown 之后，以前写的博客突然编译不出来了；当你运行 rake generate 时候，会报错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: Pygments can&apos;t parse unknown language: &lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>原因是最新版的 Pygments 这个插件对于 Markdown 的书写要求更严格了。</p>
+<p>为了找出原来，可以修改 Pygments 的报错代码，在<code>/plugins/pygments_code.rb</code>文件中:</p>
+<figure class="highlight ruby"><figcaption><span>pygments_code.rb</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">pygments</span><span class="params">(code, lang)</span></span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">defined</span>?(PYGMENTS_CACHE_DIR)</span><br><span class="line">      path = File.join(PYGMENTS_CACHE_DIR, <span class="string">"<span class="subst">#&#123;lang&#125;</span>-<span class="subst">#&#123;Digest::MD5.hexdigest(code)&#125;</span>.html"</span>)</span><br><span class="line">      <span class="keyword">if</span> File.exist?(path)</span><br><span class="line">        highlighted_code = File.read(path)</span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">        <span class="keyword">begin</span></span><br><span class="line">          highlighted_code = Pygments.highlight(code, <span class="symbol">:lexer</span> =&gt; lang, <span class="symbol">:formatter</span> =&gt; <span class="string">'html'</span>, <span class="symbol">:options</span> =&gt; &#123;<span class="symbol">:encoding</span> =&gt; <span class="string">'utf-8'</span>, <span class="symbol">:startinline</span> =&gt; <span class="literal">true</span>&#125;)</span><br><span class="line">        <span class="keyword">rescue</span> MentosError</span><br><span class="line">          raise <span class="string">"Pygments can't parse unknown language: <span class="subst">#&#123;lang&#125;</span>."</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        File.open(path, <span class="string">'w'</span>) &#123;<span class="params">|f|</span> f.print(highlighted_code) &#125;</span><br><span class="line">      <span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>把这里的</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raise <span class="string">"Pygments can't parse unknown language: <span class="subst">#&#123;lang&#125;</span>."</span></span><br></pre></td></tr></table></figure>
+<p>修改成</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">raise <span class="string">"Pygments can't parse unknown language: <span class="subst">#&#123;lang&#125;</span><span class="subst">#&#123;code&#125;</span>."</span></span><br></pre></td></tr></table></figure>
+<p>可以使得<code>rake generate</code>编译时，把有问题的部分抛出来。</p>
+<p>通过这个方法，我最终确定了我这里的情况是，用来标记 code block 的 <code>` ` ` </code> 符号和段落符号 <code>&lt;/p&gt;</code> 放在一起时产生某种错误（反正我是试不出怎么回事）。最后我用 <code>~ ~ ~</code> 代替了 <code>` ` ` </code>（同样是 Markdown 标记代码的符号），终于没有编译错误了。</p>
+<p><strong>2017/1/12 update:</strong> 更新到 python 3 之后，pygments 又出错了，不能 parse language。原因就是因为 pygments 只支持 python 2。<strong>解决方法：</strong> 用 anaconda 建立一个 python 2 的 environment:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py27 python=2.7 anaconda</span><br></pre></td></tr></table></figure>
+<p>安装好 python 2.7 后，激活这个 environment:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> activate py27</span><br></pre></td></tr></table></figure>
+<p>这样就能正常编译了。</p>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>写这篇文章的时候，遇到一个问题，就是不知道怎么让 Markdown 显示 <code>` </code> 这个符号，后来发现了解决方法：</p>
+<p>显示一个撇 <code>` </code> ，可以用两个撇来包裹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`` ` ``(两撇，空格，一撇，空格，两撇)</span><br></pre></td></tr></table></figure>
+<p>显示两个撇<code>`` </code>，可以用三个撇来包裹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">``` `` ```(三撇，空格，两撇，空格，三撇)</span><br></pre></td></tr></table></figure>
+<p>以此类推。</p>
+<h4 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h4><p>构建：<a href="http://dreamrunner.org/blog/2014/03/09/octopresszhong-shi-yong-latexxie-shu-xue-gong-shi/" target="_blank" rel="noopener">Octopress中使用Latex写数学公式</a><br>修复：<a href="http://lvraikkonen.github.io/blog/2015/08/08/adding-support-for-math-formula/" target="_blank" rel="noopener">配置Octopress支持LaTex数学公式</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://bobbielf2.github.io/2016/08/06/shu-xue-blog/" data-id="cjjnb637g000085wonan1skvf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Technology/">Technology</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/08/11/dimensional-analysis/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Dimensional Analysis
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/08/06/yong-you-ni-de-ge-ren-bo-ke/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">拥有你的个人博客</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computation/">Computation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LaTeX/">LaTeX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PDE/">PDE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Research/">Research</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Technology/">Technology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computation/">computation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/culture/">culture</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/fluid-dynamics/">fluid-dynamics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/">math</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/science/">science</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/technology/">technology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thoughts/">thoughts</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Computation/" style="font-size: 10px;">Computation</a> <a href="/tags/LaTeX/" style="font-size: 16.67px;">LaTeX</a> <a href="/tags/PDE/" style="font-size: 10px;">PDE</a> <a href="/tags/Research/" style="font-size: 10px;">Research</a> <a href="/tags/Technology/" style="font-size: 20px;">Technology</a> <a href="/tags/computation/" style="font-size: 16.67px;">computation</a> <a href="/tags/culture/" style="font-size: 10px;">culture</a> <a href="/tags/fluid-dynamics/" style="font-size: 13.33px;">fluid-dynamics</a> <a href="/tags/math/" style="font-size: 16.67px;">math</a> <a href="/tags/science/" style="font-size: 20px;">science</a> <a href="/tags/technology/" style="font-size: 16.67px;">technology</a> <a href="/tags/thoughts/" style="font-size: 13.33px;">thoughts</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/09/14/using-gnu-screen-to-resume-an-ssh-session/">Using GNU Screen to resume an SSH session</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/07/remote-access-to-linux-based-computing-resources-with-graphical-interface-for-um-students/">Remote Access to Linux-based Computing Resources with Graphical Interface (for UM students)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/12/mei-tian-du-kan-jian-,que-shi-er-bu-jian-de-dong-xi/">每天都看见，却视而不见的东西</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/12/se-qing-he-yi-zhu-shi-jin-yi-ci-ma-?/">色情和艺术是近义词吗？</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/07/dancing-with-julia/">Dancing With Julia</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Bowei &#34;Bobbie&#34; Wu .<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
