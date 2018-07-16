@@ -174,9 +174,9 @@
 <p>安装完再次更新</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rake generate</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"theme"</span></span><br><span class="line">git push origin <span class="built_in">source</span></span><br><span class="line">rake deploy</span><br></pre></td></tr></table></figure>
 <p>安装完 greyshade，你会发现左方导航栏上的 About me 是指向原作者的主页的，可以这样改回来：在 <code>/source/_includes/custom/navigation.html</code> 中记录了导航栏的内容</p>
-<pre><code class="lang-html">&lt;li&gt;&lt;a href=&quot;/&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://about.me/shashankmehta&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/blog/archives&quot;&gt;Archives&lt;/a&gt;&lt;/li&gt;
+<pre><code class="html"><span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/"</span>&gt;</span>Blog<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://about.me/shashankmehta"</span>&gt;</span>About<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/blog/archives"</span>&gt;</span>Archives<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
 </code></pre>
 <p>把里面的网址 <code>http://about.me/shashankmehta</code> 改成别的东西就好了。</p>
 <h4 id="后续参考："><a href="#后续参考：" class="headerlink" title="后续参考："></a>后续参考：</h4><p><a href="http://zwgithub.github.io/2016/06/14/%E7%94%A8Octopress%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84github%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">设置头像，文章以摘要形式显示，评论功能</a></p>
@@ -186,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://bobbielf2.github.io/2016/08/06/yong-you-ni-de-ge-ren-bo-ke/" data-id="cjjnhs507001v9awo8tjuf0pl" class="article-share-link">Share</a>
+      <a data-url="http://bobbielf2.github.io/2016/08/06/yong-you-ni-de-ge-ren-bo-ke/" data-id="cjjniz6dv001wnmwokbs9wgk2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/technology/">technology</a></li></ul>

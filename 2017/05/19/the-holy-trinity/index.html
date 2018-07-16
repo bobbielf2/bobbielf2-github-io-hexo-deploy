@@ -117,18 +117,23 @@
 <p>Such leap in computing power has unleashed ideas that were sheer impossible just decades ago. </p>
 <p>With experiment, science have gone a long way tracing back to the ancient Greeks. With computation, science has taken off and is moving ever faster. We can simulate thins that are too far (universe), too small (quantum), too expensive (medicine), or too complex (social network).</p>
 <h2 id="Mathematics"><a href="#Mathematics" class="headerlink" title="Mathematics"></a>Mathematics</h2><p>I would like to mention more shamrock ideas I found reading math.</p>
-<h3 id="Functions-1"><a href="#Functions-1" class="headerlink" title="Functions 1"></a>Functions <sup><a href="#fn_1" id="reffn_1">1</a></sup></h3><p>The function shamrock has three leaves respectively labeled formula, spectral coefficients, and grid point values. Together, these three concepts help us better understand and use functions. To see how these three concepts connect to each other, we realize that we go from the symbolic $f(x)$ to values ${f_j}$ by sampling, from $f(x)$ to spectral coefficients ${a_j}$ by integral transforms (e.g. Fourier transform), and from ${f_j}$ to ${a_j}$ by discrete algorithms (e.g. FFT).</p>
+<h3 id="Functions-1"><a href="#Functions-1" class="headerlink" title="Functions [^1]"></a>Functions [^1]</h3><p>The function shamrock has three leaves respectively labeled formula, spectral coefficients, and grid point values. Together, these three concepts help us better understand and use functions. To see how these three concepts connect to each other, we realize that we go from the symbolic $f(x)$ to values ${f_j}$ by sampling, from $f(x)$ to spectral coefficients ${a_j}$ by integral transforms (e.g. Fourier transform), and from ${f_j}$ to ${a_j}$ by discrete algorithms (e.g. FFT).</p>
 <img src="/images/blog_figures/shamrock_function.png" class="center" width="300">
 <p>When solving a problem that involves a function $f(x)$, the symbolic formula is manipulated with analytical methods, its spectral coefficients are useful for Galerkin methods, and the grid point values are what the convenient pseudospectral methods operate on.</p>
 <p>A mathematician would be crippled if failing to understand and to freely switch between any of them.</p>
-<h3 id="Analysis-2"><a href="#Analysis-2" class="headerlink" title="Analysis 2"></a>Analysis <sup><a href="#fn_2" id="reffn_2">2</a></sup></h3><p>This probably is my favorite shamrock. In analysis, the three types of series, Fourier, Laurent, and Chebyshev, are really the same series looking from different angles.</p>
+<h3 id="Analysis-2"><a href="#Analysis-2" class="headerlink" title="Analysis [^2]"></a>Analysis [^2]</h3><p>This probably is my favorite shamrock. In analysis, the three types of series, Fourier, Laurent, and Chebyshev, are really the same series looking from different angles.</p>
 <img src="/images/blog_figures/shamrock_analysis.png" class="center" width="300">
 <p>Let’s consider the substitutions</p>
-<script type="math/tex; mode=display">x = \frac{z+z^{-1}}{2} = \cos\theta</script><p>they give the equivalent relations</p>
-<script type="math/tex; mode=display">T_n(x) = \frac{z^n+z^{-n}}{2} = \cos(n\theta)</script><p>where $T_n(x)$ is the Chebyshev polynomial of order $n$. Given a smooth function $f(x)$ on $x\in[-1,1]$, it can be expanded as a Chebyshev series</p>
-<script type="math/tex; mode=display">f(x) = \sum^\infty_{n=0}a_nT_n(x)</script><p>which under the equivalent relations gives</p>
-<script type="math/tex; mode=display">\sum^\infty_{n=0}a_nT_n(x) = \sum^\infty_{n=0} a_n \frac{z^n+z^{-n}}{2} = \sum^\infty_{n=0} a_n \cos(n\theta)</script><p>or</p>
-<script type="math/tex; mode=display">\sum^\infty_{n=0}a_nT_n(x) = \frac{a_0}{2}+\frac{1}{2}\sum^\infty_{n=-\infty} a_{|n|} z^n = \frac{a_0}{2}+\frac{1}{2}\sum^\infty_{n=-\infty} a_{|n|} e^{in\theta}</script><p>The last equalities show the amazing relationships between the three branches of analysis, providing a picture about how viewing from different angles gives you different series expansions:</p>
+<p>$$x = \frac{z+z^{-1}}{2} = \cos\theta$$</p>
+<p>they give the equivalent relations</p>
+<p>$$T_n(x) = \frac{z^n+z^{-n}}{2} = \cos(n\theta)$$</p>
+<p>where $T_n(x)$ is the Chebyshev polynomial of order $n$. Given a smooth function $f(x)$ on $x\in[-1,1]$, it can be expanded as a Chebyshev series</p>
+<p>$$f(x) = \sum^\infty_{n=0}a_nT_n(x)$$</p>
+<p>which under the equivalent relations gives</p>
+<p>$$\sum^\infty_{n=0}a_nT_n(x) = \sum^\infty_{n=0} a_n \frac{z^n+z^{-n}}{2} = \sum^\infty_{n=0} a_n \cos(n\theta)$$</p>
+<p>or</p>
+<p>$$\sum^\infty_{n=0}a_nT_n(x) = \frac{a_0}{2}+\frac{1}{2}\sum^\infty_{n=-\infty} a_{|n|} z^n = \frac{a_0}{2}+\frac{1}{2}\sum^\infty_{n=-\infty} a_{|n|} e^{in\theta}$$</p>
+<p>The last equalities show the amazing relationships between the three branches of analysis, providing a picture about how viewing from different angles gives you different series expansions:</p>
 <ul>
 <li>If you look at the unit circle in the complex plane (or a periodic interval) $\theta\in[0,2\pi]$, you see Fourier series, the fundamental tool for real analysis</li>
 <li>If you look at the annulus <span>$\frac{1}{\rho} &lt; |z| &lt; \rho$</span>, you see Laurent series, the fundamental tool for complex analysis</li>
@@ -136,17 +141,13 @@
 </ul>
 <p>Such connections are always there, but you need to discover them. Even many math majors know little about the shamrock, and most of them have taken all three courses.</p>
 <h2 id="A-final-note"><a href="#A-final-note" class="headerlink" title="A final note"></a>A final note</h2><p>I love the shamrocks not because they teach me new concepts; in fact they don’t. I have understood the concepts in the three leaves of each shamrock before I saw them put together. The important thing of these shamrocks is that they provide a unified view, a new prospective that connects and sees things you knew differently. Like Kalid Azad (author of <a href="https://betterexplained.com" target="_blank" rel="noopener">BetterExplained</a>) once <a href="https://betterexplained.com/articles/learn-math-like-mega-man/" target="_blank" rel="noopener">mentioned in a post</a>, our understandings improve the most not when we’ve learned new concepts, but when mindset shifts happen.</p>
-<h3 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h3><blockquote id="fn_1">
-<sup>1</sup>. John P Boyd, <em>Chebyshev and Fourier Spectral Methods</em>, Section 9.3<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
-</blockquote>
-<blockquote id="fn_2">
-<sup>2</sup>. Nick Trefethen, <em>Approximation Theory and Approximation Practice</em>, Chapter 3<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
-</blockquote>
+<h3 id="References"><a href="#References" class="headerlink" title="References:"></a>References:</h3><p>[^1]: John P Boyd, <em>Chebyshev and Fourier Spectral Methods</em>, Section 9.3</p>
+<p>[^2]: Nick Trefethen, <em>Approximation Theory and Approximation Practice</em>, Chapter 3</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://bobbielf2.github.io/2017/05/19/the-holy-trinity/" data-id="cjjnhs4z7000l9awoeydukpx1" class="article-share-link">Share</a>
+      <a data-url="http://bobbielf2.github.io/2017/05/19/the-holy-trinity/" data-id="cjjniz6cx000mnmwohi8ylj58" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/computation/">computation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/math/">math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/science/">science</a></li></ul>
